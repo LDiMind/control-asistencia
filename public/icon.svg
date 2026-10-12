@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  
+  <!-- Outer subtle ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.2"/>
+  
+  <!-- Central Attendance Card Graphic -->
+  <g filter="url(#shadow)">
+    <!-- ID Card Base -->
+    <rect x="120" y="100" width="272" height="320" rx="36" fill="#ffffff" />
+    
+    <!-- Lanyard Slot -->
+    <rect x="220" y="120" width="72" height="14" rx="7" fill="#cbd5e1" />
+    
+    <!-- User Avatar Circle -->
+    <circle cx="256" cy="205" r="45" fill="#e0e7ff" />
+    <circle cx="256" cy="195" r="20" fill="#4f46e5" />
+    <path d="M228 234 C228 218 240 212 256 212 C272 212 284 218 284 234 Z" fill="#4f46e5" />
+    
+    <!-- Badge Status Lines -->
+    <rect x="160" y="270" width="192" height="14" rx="7" fill="#3b82f6" />
+    <rect x="180" y="296" width="152" height="10" rx="5" fill="#94a3b8" />
+    
+    <!-- Punch / Checkmark Badge -->
+    <circle cx="340" cy="370" r="36" fill="#10b981" />
+    <path d="M326 370 L336 380 L354 362" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
